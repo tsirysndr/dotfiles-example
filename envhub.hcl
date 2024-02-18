@@ -1,5 +1,6 @@
 packages = [
-  "hello"
+  "hello",
+  "exa"
 ]
 
 envs {
