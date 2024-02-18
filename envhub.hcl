@@ -1,6 +1,6 @@
 packages = [
   "hello",
-  "exa"
+  "eza"
 ]
 
 envs {
