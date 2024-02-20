@@ -1,0 +1,29 @@
+name: dotfiles example
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    continue-on-error: true
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: tsirysndr/setup-envhub@v1
+        with:
+          version: "v0.2.9"
+          dotfiles: github:tsirysndr/dotfiles-example
+      - name: Verify dotfiles
+        run: |
+          hello
+          type hello
+          ls -la ~/.zshrc.example
+          ls -la ~/.gradle/gradle.properties
+          cat ~/.zshrc.example
+          cat ~/.gradle/gradle.properties
