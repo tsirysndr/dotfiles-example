@@ -23,6 +23,7 @@ jobs:
         run: |
           hello
           type hello
+          type eza
           ls -la ~/.zshrc.example
           ls -la ~/.gradle/gradle.properties
           cat ~/.zshrc.example
