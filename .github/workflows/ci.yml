@@ -28,3 +28,4 @@ jobs:
           ls -la ~/.gradle/gradle.properties
           cat ~/.zshrc.example
           cat ~/.gradle/gradle.properties
+          envhub status
