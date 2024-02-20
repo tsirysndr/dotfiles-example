@@ -7,7 +7,7 @@ This is a minimal example of how to use dotfiles with [Envhub CLI](https://githu
 ## 🚚 Installation
 
 ```sh
-envhub use tsirysndr/dotfiles-example
+envhub use github:tsirysndr/dotfiles-example
 ```
 
 ## 📝 License
